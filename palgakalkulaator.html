@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aron Aland &bullet; Palgakalkulaator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Aron Aland</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="palgakalkulaator.html">Palgakalkulaator</a></li>
+                <li><a href="#">Võta ühendust</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <h1>Palgakalkulaator</h1>
+        <p>
+            <select id="tyyp">
+                <option value="brutopalk">Brutopalk</option>
+                <option value="netopalk">Netopalk</option>
+            </select>
+            <input type="number" oninput="arvuta()" id="summa" placeholder="EUR"> EUR
+        </p>
+        <div class="result">
+            <h2>Tööandja maksud</h2>
+            <p id="tootuskindlustus1">Töötuskindlustus: </p>
+            <p id="sotsiaalmaks">Sotsiaalmaks: </p>
+            <p id="kokku1">Tööandja kulu: </p>
+        </div>
+
+        <div class="result">
+            <h2>Töötaja maksud</h2>
+            <p id="tootuskindlustus2">Töötuskindlustus: </p>
+            <p id="pensionifond">Pensionifond: </p>
+            <p id="tulumaks">Tulumaks: </p>
+            <p id="tulumaksuvaba">Maksuvaba tulu: </p>
+            <p id="kokku2">Netopalk: </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2019. Aron Aland
+    </footer>
+
+    <script src="palgakalkulaator.js"></script>
+</body>
+</html>

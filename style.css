@@ -6,12 +6,18 @@ body {
     background-color: #dcdde1;
     height: 100%;
 }
+
+.result {
+    float: left;
+    margin-right: 135px;
+    margin-top: 50px;
+}
 /* HEADER LOGO */
 header {
     float: left;
     width: 100%;
     border-bottom: 1px solid black;
-    background-color: #bdc3c7;
+    background-color: #3498db;
     box-shadow: 10px 5px 50px rgba(0, 0, 0, 0.808);
 }
 header .logo {
@@ -23,18 +29,22 @@ header .logo {
 }
 
 header .logo:hover {
-    color: grey; 
+    color: #333333; 
 }
 
 /* GENERAL */ 
 p {
-    font-size: 15pt;
+    font-size: 18pt;
     margin-top: 6px;
     margin-bottom: 0px;
 }
 
 h1 {
     font-size: 31pt;
+}
+
+h2 {
+    font-size: 21pt;
 }
 
 a {
@@ -56,6 +66,16 @@ ul li {
     padding: 5px;
 }
 
+input, select, option {
+    padding: 15px;
+    font-size: 15pt;
+}
+
+
+label {
+    font-size: 15pt;
+}
+
 /* NAVIGATION */
 nav {
     float: right;
@@ -74,13 +94,13 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     padding: 5px 15px 5px 15px;
-    border: 1px solid grey;
+    border: 1px solid #333333;
     border-radius: 8px;
     color: black;
 }
 
 nav ul li a:hover {
-    background-color: rgb(102, 102, 102);
+    background-color:#2980b9;
     color: white;
 }
 
