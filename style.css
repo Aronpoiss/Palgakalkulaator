@@ -12,11 +12,15 @@ body {
     margin-right: 135px;
     margin-top: 50px;
 }
+
+.result {
+    transition: width 0.5s;
+}
 /* HEADER LOGO */
 header {
     float: left;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #333333;
     background-color: #3498db;
     box-shadow: 10px 5px 50px rgba(0, 0, 0, 0.808);
 }
@@ -104,6 +108,10 @@ nav ul li a:hover {
     color: white;
 }
 
+.selected {
+    color: white;
+}
+
 /* WRAPPER */
 .wrapper {
     margin: 10px 5% 0px 5%;
@@ -124,5 +132,5 @@ footer {
     height: 50px;
     position: absolute;
     bottom: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid #333333;
 }

@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Aron Aland</a>
+        <a href="#" class="logo">AA Solutions</a>
         <nav>
             <ul>
-                <li><a href="index.html">Avaleht</a></li>
-                <li><a href="palgakalkulaator.html">Palgakalkulaator</a></li>
+                <li><a href="#">Avaleht</a></li>
+                <li><a class="selected" href="palgakalkulaator.html">Palgakalkulaator</a></li>
                 <li><a href="#">Võta ühendust</a></li>
             </ul>
         </nav>
@@ -24,29 +24,29 @@
         <p>
             <select id="tyyp">
                 <option value="brutopalk">Brutopalk</option>
-                <option value="netopalk">Netopalk</option>
+                <option value="netopalk" disabled>Netopalk</option>
             </select>
-            <input type="number" oninput="arvuta()" id="summa" placeholder="EUR"> EUR
+            <input type="number" oninput="arvuta()" id="summa" placeholder="Sisesta number"> EUR
         </p>
         <div class="result">
             <h2>Tööandja maksud</h2>
-            <p id="tootuskindlustus1">Töötuskindlustus: </p>
-            <p id="sotsiaalmaks">Sotsiaalmaks: </p>
-            <p id="kokku1">Tööandja kulu: </p>
+            <p id="tootuskindlustus1">Töötuskindlustus: 0.00 EUR</p>
+            <p id="sotsiaalmaks">Sotsiaalmaks: 0.00 EUR</p>
+            <p id="kokku1">Tööandja kulu: 0.00 EUR</p>
         </div>
 
         <div class="result">
             <h2>Töötaja maksud</h2>
-            <p id="tootuskindlustus2">Töötuskindlustus: </p>
-            <p id="pensionifond">Pensionifond: </p>
-            <p id="tulumaks">Tulumaks: </p>
-            <p id="tulumaksuvaba">Maksuvaba tulu: </p>
-            <p id="kokku2">Netopalk: </p>
+            <p id="tootuskindlustus2">Töötuskindlustus: 0.00 EUR</p>
+            <p id="pensionifond">Pensionifond: 0.00 EUR</p>
+            <p id="tulumaks">Tulumaks: 0.00 EUR</p>
+            <p id="tulumaksuvaba">Maksuvaba tulu: 0.00 EUR</p>
+            <p id="kokku2">Netopalk: 0.00 EUR</p>
         </div>
     </div>
 
     <footer>
-        &copy; 2019. Aron Aland
+        &copy; 2019. AA Solutions
     </footer>
 
     <script src="palgakalkulaator.js"></script>
